@@ -1,20 +1,22 @@
-function Z = calculateBrillBreggsZfactorHydrogen(T, P)
-% calculateBrillBeggsZfactorHydrogen  Computes the hydrogen density using the Brill and Beggs correlation.
+function Z = calculateBrillBeggsZfactorHydrogen(T, P)
+% calculateBrillBeggsZfactorHydrogen  Computes the gas compressibility factor
+%                                     for hydrogen using the Brill and Beggs
+%                                     correlation.
 %
 % SYNOPSIS:
-%   rho = calculateBrillBeggsZfactorHydrogen(T, P)
+%   Z = calculateBrillBeggsZfactorHydrogen(T, P)
 %
 % DESCRIPTION:
-%   This function calculates the hydrogen density based on the Brill and Beggs
-%   correlation, incorporating temperature (T) and pressure (P). The correlation
-%   is derived from empirical coefficients specific to hydrogen gas properties.
+%   This function returns the gas compressibility factor (\(Z\)) for hydrogen
+%   based on the Brill and Beggs correlation, incorporating temperature (\(T\))
+%   and pressure (\(P\)).
 %
 % INPUTS:
 %   T - Temperature in Kelvin (K)
-%   P - Pressure in megapascals (MPa)
+%   P - Pressure in Pascal (Pa)
 %
 % OUTPUTS:
-%   rho - Hydrogen density in kilograms per cubic meter (kg/m^3)
+%   Z - Gas compressibility factor [-]
 %
 % REFERENCE:
 %   Jafari Raad, Seyed Mostafa, Leonenko, Yuri, Hassanzadeh, Hassan, 2023.

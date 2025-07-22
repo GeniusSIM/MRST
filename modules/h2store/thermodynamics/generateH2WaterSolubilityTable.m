@@ -132,7 +132,7 @@ mH2 = 2.016e-3;  % Molar mass of H2 (kg/mol)
 Joule = 8.314472;  % Ideal gas constant (J/(mol*K))
 
 T_K =temperatures'+273.15;
-ZH2 = calculateBrillBreggsZfactorHydrogen(T_K, pressures);
+ZH2 = calculateBrillBeggsZfactorHydrogen(T_K, pressures);
 rhoH2_corr = pressures .* mH2 ./ (ZH2 .* Joule .* T_K);
 % one can also extract NIST data
 % rhoH2_corr = getH2Densities(temperatures, pressures);
