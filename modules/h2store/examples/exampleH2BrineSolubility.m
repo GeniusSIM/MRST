@@ -205,7 +205,7 @@ Temperature_K_ = tab_sol.("# temperature [°C]") + 273.15;  % Convert to Kelvin
 Pressure_Pa_ = tab_sol.("pressure [Pa]");
 
 % Calculate density of hydrogen using the Brill and Beggs correlation
-ZH2_corr = calculateBrillBreggsZfactorHydrogen(Temperature_K_, Pressure_Pa_);
+ZH2_corr = calculateBrillBeggsZfactorHydrogen(Temperature_K_, Pressure_Pa_);
 rhoH2_corr = Pressure_Pa_ .* mH2 ./ (ZH2_corr .* Joule .* Temperature_K_);
 
 % Calculate density of pure water using the Rowe-Chou correlation
